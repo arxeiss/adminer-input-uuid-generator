@@ -1,6 +1,6 @@
 # Adminer Input UUID generator
 
-[![Adminer](https://img.shields.io/badge/adminer-%3E%3D4.4.0-blue)](https://www.adminer.org)
+[![Adminer](https://img.shields.io/badge/adminer-%3E%3D5.0-blue)](https://www.adminer.org)
 
 ## Installation & usage
 
@@ -18,3 +18,13 @@ $plugins = [
     new AdminerUUIDGenerator(),
 ];
 ```
+
+# Changelog
+
+## 2.0
+
+- Added support for Adminer 5
+
+## 1.0
+
+- Initial release

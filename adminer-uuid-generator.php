@@ -13,7 +13,7 @@ class AdminerUUIDGenerator {
 
     function head() {
         ?>
-        <script<?php echo nonce(); ?>>
+        <script<?php echo Adminer\nonce(); ?>>
             function uuidv4() {
                 // https://stackoverflow.com/a/2117523
                 if (window.crypto) {
@@ -47,7 +47,7 @@ class AdminerUUIDGenerator {
 
             $maxlength = (int)$field["length"];
 
-            return "<input value='" . h($value) . "'" . ($maxlength ? " data-maxlength='$maxlength'" : "")
+            return "<input value='" . Adminer\h($value) . "'" . ($maxlength ? " data-maxlength='$maxlength'" : "")
                 ."$attrs> <button class=\"js-generateUUID\">".$this->buttonText."</button>";
         }
     }
