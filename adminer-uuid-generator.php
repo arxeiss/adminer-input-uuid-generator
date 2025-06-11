@@ -36,7 +36,7 @@ class AdminerUUIDGenerator {
                 });
             });
           </script>
-        <?
+        <?php
     }
 
     function editInput($table, $field, $attrs, $value) {
